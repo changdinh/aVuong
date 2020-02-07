@@ -1,0 +1,8 @@
+<h1>LIST MOVIE</h1>
+<div class="listMovie">
+    <ul>
+        <li *ngFor="let eachMovie of listMovie" (click)="onClick(eachMovie)"
+            [ngClass]="{'selected': eachMovie === selectedMovie}">ID {{eachMovie.id}}: {{eachMovie.name}}</li>
+    </ul>
+    <app-movie-detail [selectedMovie]="selectedMovie"></app-movie-detail>
+</div>

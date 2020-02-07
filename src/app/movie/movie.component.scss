@@ -1,0 +1,20 @@
+.listMovie{
+    display: flex;
+    ul{
+        margin: 0;
+        width: 50%;
+        background: rgb(35, 189, 250);
+        padding: 1em;
+        list-style: none;
+        li{
+            background: #d5e2d6;
+            margin: 1em;
+            padding: 1em;
+            cursor: pointer;
+        }
+    }
+}
+
+.selected {
+    background: #a8d6ab !important;
+}

@@ -1,0 +1,7 @@
+<div *ngIf="selectedMovie" class="parents">
+    <h1>{{selectedMovie.name}} Detail</h1>
+    <span>ID: </span> {{selectedMovie.id}}
+    <span>Name:
+        <input type="text" [(ngModel)]='selectedMovie.name'>
+    </span>
+</div>
